@@ -44,7 +44,7 @@ namespace Veldrid.Maui.Samples
             var platformView = new VeldridView() { };
             platformView.AutoReDraw = true;
 #if IOS || MACCATALYST
-            platformView.Backend = GraphicsBackend.Vulkan;
+            platformView.Backend = GraphicsBackend.Metal;
 #elif ANDROID
             //platformView.Backend = GraphicsBackend.OpenGLES;
 #endif
